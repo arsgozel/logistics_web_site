@@ -76,7 +76,7 @@
           <div class="col-sm">
             <div>
               <div class="py-2" style="background-color: darkorange;">
-                <div class="px-5"><a href="" class="bolder link-light text-decoration-none">Learn more about as > </a></div>
+                <div class="px-5"><a href="" class="bolder link-light text-decoration-none">Learn more about us > </a></div>
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@
               
           </div>
           <div class="col-sm">
-              <img src="img/BRASI Distribution Channel Management Course - DU&T Consulting.png" alt="" class="img-fluid">
+              <img src="img/m5.webp" alt="" class="img-fluid">
               
               <div class="fs-5 mb-2 fw-semibold">
                 International delivery
@@ -103,7 +103,7 @@
           </div>
   
           <div class="col-sm">
-            <img src="img/BRASI Distribution Channel Management Course - DU&T Consulting.png" alt="" class="img-fluid">
+            <img src="img/m4.avif" alt="" class="img-fluid">
   
             <div class="fs-5 mb-2 fw-semibold">
               Freight and plane transportation
@@ -115,7 +115,7 @@
           </div>
   
           <div class="col-sm">
-            <img src="img/BRASI Distribution Channel Management Course - DU&T Consulting.png" alt="" class="img-fluid">
+            <img src="img/m9.avif" alt="" class="img-fluid">
   
             <div class="fs-5 mb-2 fw-semibold">
               Parcel
@@ -133,7 +133,7 @@
     <!--  -->
     <section id="service">
       <div class="p-5 border-2 border-top border-bottom border-secondary border-opacity-25" style="background-color: rgb(245, 245, 245);">
-        <div class="container-lg">
+        <div class="container-lg mb-3 mt-3">
           <div class="row g-5">
   
             <div class="col-sm">
@@ -145,7 +145,7 @@
             </div>
   
             <div class="col-sm">
-              <div class="fs-4 fw-bold mb-2 mt-md-4 mt-sm-1 text-center text-sm-start">What do you need?</div>
+              <div class="fs-4 fw-bold mb-4 mt-md-4 mt-sm-1 text-center text-sm-start">What do you need?</div>
   
               <div class="row g-3">
                   <div class="col-sm">
@@ -192,66 +192,91 @@
     <!-- contact -->
     <section id="contactUs">
       <div class="container-lg">
-        <div class="row gx-5">
+        <div class="row gx-5 px-3">
           <div class="col-sm"></div>
   
           <div class="col-sm">
             <div>
               <div class="py-2" style="background-color: darkorange;">
-                <div class="px-5"><a href="" class="bolder link-light text-decoration-none">Learn more about as > </a></div>
+                <div class="px-5"><a href="" class="bolder link-light text-decoration-none">Learn more about us > </a></div>
               </div>
             </div>
           </div>
         </div>
         
-          <div class="row g-sm-5 g-md-3 px-4 pt-2 mt-3">
-            <div class="col-sm-7">
-              <div>
+          <div class="row g-5 mt-2 mb-5 px-3">
+            <div class="col-sm-6">
+              <div class="">
                   <div class="fw-bold fs-4">Want to talk?</div>
                   <div class="fw-bold h4 mb-3">Please call as: 
                     <a href="tel:+99361-00-61-00" class="text-decoration-none" style="color: darkorange;">+9936123614</a>
                   </div>
     
                   <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem sapiente reprehenderit aut quia facilis ut quasi sequi tempore ipsam sit cupiditate, culpa dolorum, laborum consequatur? Deserunt, illo ducimus. Aspernatur, quia.</p>
+
+                  <div class="mt-2">
+                    <button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span> <i class="bi bi-instagram fs-6"></i>
+                    </button>
+        
+                    <button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span> <i class="bi bi-google fs-6"></i>
+                    </button>
+        
+                    <button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span> <i class="bi bi-twitter fs-6"></i>
+                    </button>
+        
+                    <button>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span> <i class="bi bi-tiktok fs-6"></i>
+                    </button>
+                  </div>
               </div>
             </div>
             
             <div class="col-sm">
-              <div class="mx-md-5 mx-sm-0 pt-md-3 mt-md-4 pt-sm-0 mt-sm-0">
-                <button>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span> <i class="bi bi-instagram fs-6"></i>
-                </button>
-    
-                <button>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span> <i class="bi bi-google fs-6"></i>
-                </button>
-    
-                <button>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span> <i class="bi bi-twitter fs-6"></i>
-                </button>
-    
-                <button>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span> <i class="bi bi-tiktok fs-6"></i>
-                </button>
-              </div>
+              <div id="map"></div>
             </div>
+            
           </div>
         </div>
       </section>
 
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=05c8baeb-c4cd-4a5d-af0b-fe68d587f06a&lang=en_US"
+				type="text/javascript">
+		</script>
+		<script type="text/javascript">
+
+			if (jQuery(window).width() > 200) {
+				ymaps.ready(init);
+				function init() {
+					var myMap = new ymaps.Map("map", {
+						center: [48.870502, 2.304897],
+						zoom: 18,
+						controls: ['smallMapDefaultSet']
+					});
+
+					myMap.geoObjects.add(new ymaps.Placemark([48.870502,  2.304897], {
+						balloonContent: "<strong>France, Paris s.</strong><br> Champs-Élysées.",
+				}, {preset: 'islands#icon',
+						iconColor: '#b32212'}
+					))
+				}
+			}
+		</script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/splide.min.js"></script>

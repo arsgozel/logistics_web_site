@@ -8,7 +8,7 @@
 
 
 p {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 html,
@@ -86,7 +86,7 @@ button {
   padding: 1em 1.8em;
   outline: none;
   border: 0;
-  background: rgb(245, 245, 245);
+  background: rgb(212, 212, 212);
   color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -163,7 +163,7 @@ button {
  
  button:active {
   background: #ff9900;
-  background: linear-gradient(to top right, #d3d3d3, #fcfcfc);
+  background: linear-gradient(to top right, #bebebe, #fcfcfc);
   color: #bfbfbf;
   box-shadow: 0 0 6px #ffd000, 0 0 8px #ffe600, 0 0 8px #ffd000;
   transition: 0.1s;
@@ -176,4 +176,8 @@ button {
   transition: none;
   transition-delay: none;
  }
- 
+
+ #map{
+  height: 300px;
+}
+
