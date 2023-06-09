@@ -81,12 +81,12 @@ li:hover::before{
   50% { border-color: black }
 }
 
-button {
+.btn {
   position: relative;
   padding: 1em 1.8em;
   outline: none;
   border: 0;
-  background: rgb(212, 212, 212);
+  background: rgb(221, 221, 221);
   color: #000;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -98,15 +98,15 @@ button {
   font-weight: bold;
  }
  
- button:hover {
+ .btn:hover {
   transition-delay: 0.6s;
  }
  
- button span {
+ .btn span {
   position: absolute;
  }
  
- button span:nth-child(1) {
+ .btn span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -114,12 +114,12 @@ button {
   background: linear-gradient(90deg, transparent, rgb(255, 196, 0));
  }
  
- button:hover span:nth-child(1) {
+ .btn:hover span:nth-child(1) {
   left: 100%;
   transition: 0.7s;
  }
  
- button span:nth-child(3) {
+ .btn span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -127,13 +127,13 @@ button {
   background: linear-gradient(90deg, transparent, #ff9900);
  }
  
- button:hover span:nth-child(3) {
+ .btn:hover span:nth-child(3) {
   right: 100%;
   transition: 0.7s;
   transition-delay: 0.35s;
  }
  
- button span:nth-child(2) {
+ .btn span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -141,13 +141,13 @@ button {
   background: linear-gradient(180deg, transparent, #ffd000);
  }
  
- button:hover span:nth-child(2) {
+ .btn:hover span:nth-child(2) {
   top: 100%;
   transition: 0.7s;
   transition-delay: 0.17s;
  }
  
- button span:nth-child(4) {
+ .btn span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -155,13 +155,13 @@ button {
   background: linear-gradient(360deg, transparent, #ffe600);
  }
  
- button:hover span:nth-child(4) {
+ .btn:hover span:nth-child(4) {
   bottom: 100%;
   transition: 0.7s;
   transition-delay: 0.52s;
  }
  
- button:active {
+ .btn:active {
   background: #ff9900;
   background: linear-gradient(to top right, #bebebe, #fcfcfc);
   color: #bfbfbf;
@@ -169,7 +169,7 @@ button {
   transition: 0.1s;
  }
  
- button:active span:nth-child(1) 
+ .btn:active span:nth-child(1) 
  span:nth-child(2) 
  span:nth-child(2) 
  span:nth-child(2) {
