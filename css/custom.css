@@ -165,7 +165,7 @@ li:hover::before{
   background: #ff9900;
   background: linear-gradient(to top right, #bebebe, #fcfcfc);
   color: #bfbfbf;
-  box-shadow: 0 0 6px #ffd000, 0 0 8px #ffe600, 0 0 8px #ffd000;
+  box-shadow: 0 0 4px #ffd000, 0 0 4px #ffe600, 0 0 4px #ffd000;
   transition: 0.1s;
  }
  
