@@ -48,6 +48,8 @@
       </div>
     </nav>
 
+    <!-- scroll up -->
+    <button class="border-0 bg-warning rounded-0 position-fixed bottom-0 end-0 my-3 mx-3 mx-lg-5 mx-xl-5" style="display: block; z-index: 99;" onclick="topFunction()" id="myBtn"><i class="bi bi-caret-up-fill fs-6 text-white"></i></button>
 
     <!-- main -->
     <section id="home">
@@ -92,11 +94,7 @@
               
           </div>
           <div class="col-lg">
-            <picture>
-              <source media="(min-width:992px)" srcset="img/m5.webp">
-              <img src="img/m5-sm.png" alt="" class="img-fluid w-100">
-            </picture>
-              
+              <img src="img/t6.png" alt="" class="img-fluid">
               <div class="fs-5 mb-2 fw-semibold">
                 International delivery
               </div>
@@ -106,11 +104,7 @@
           </div>
   
           <div class="col-lg">
-            <picture>
-              <source media="(min-width:992px)" srcset="img/m4.avif">
-              <img src="img/m1-sm.png" alt="" class="img-fluid w-100">
-            </picture>
-  
+            <img src="img/t3.png" alt="" class="img-fluid">
             <div class="fs-5 mb-2 fw-semibold">
               Freight and plane transportation
             </div>
@@ -121,10 +115,7 @@
           </div>
   
           <div class="col-lg">
-            <picture>
-              <source media="(min-width:992px)" srcset="img/m9.avif">
-              <img src="img/m10-sm.png" alt="" class="img-fluid w-100">
-            </picture>
+              <img src="img/t1.png" alt="" class="img-fluid">
   
             <div class="fs-5 mb-2 fw-semibold">
               Parcel
@@ -149,7 +140,7 @@
                 <div class="fs-4 fw-bold mb-4 typewriter">We are proud to deliver <br> parcels since <span style="color: darkorange;">1976</span></div>
   
                 <div class="mt-2">
-                  <img src="img/3d isometric flat conceptual vector image on VectorStock.jpg" alt="" class="img-fluid">
+                  <img src="img/people.png" alt="" class="img-fluid">
                 </div>
             </div>
   
@@ -294,7 +285,7 @@
         <div style="background-color: rgb(245, 245, 245);">
           <div class="container-lg">
             <footer class="px-3 pt-5">
-              <div class="row g-sm-4 g-md-5">
+              <div class="row g-sm-4 g-lg-5">
                 <div class="col-md mb-3">
                   <div class="fs-6 fw-semibold mb-3">Client Care</div>
                   <ul class="nav flex-column">
@@ -354,8 +345,28 @@
     </section>
     
 
+    <script>
+      
+    let mybutton = document.getElementById("myBtn");
+  
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
 </body>
 
 </html>
